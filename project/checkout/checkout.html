@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Подтверждение</title>
+  <link rel="stylesheet" href="checkout.css">
+  <link rel="shortcut icon" href="../temp/img/applefon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <h1>Applefon</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li class="dropdown">
+          <a href="../products/products.html">Вся электроника</a>
+          <ul>
+            <li><a href="../products/products.css">iPhone</a></li>
+            <li><a href="../products/products2.html">iPad</a></li>
+            <li><a href="../products/products3.html">MacBook</a></li>
+            <li><a href="../products/products4.html">Apple Watch</a></li>
+          </ul>
+        </li>
+        <li><a href="../about us/about.html">О нас</a></li>
+        <li><a href="../contact/contact.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="cart">
+      <a href="../cart/cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+      <div class="cart-count">2</div>
+    </div>
+  </header>
+  <main>
+    <h2>Подтверждение заказа</h2>
+    <form>
+      <div class="form-group">
+        <label for="first-name">Имя</label>
+        <input type="text" id="first-name" name="first-name" required>
+      </div>
+      <div class="form-group">
+        <label for="last-name">Фамилия</label>
+        <input type="text" id="last-name" name="last-name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <small>Пример: +7 987 654-32-10</small>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Адрес</label>
+        <textarea id="address" name="address" required></textarea>
+      </div>
+      <button class="btn-submit" type="submit">Подтвердить</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2023 Applefon. Все права защищены.</p>
+  </footer>
+</body>
+
+</html>
